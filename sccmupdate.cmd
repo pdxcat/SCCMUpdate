@@ -3,7 +3,7 @@ REM Refresh SCCM Machine Policy on a computer or set of computers.
 REM If target computer is not specified, SCCM Machine Policy is refreshed
 REM on the local machine.
 REM
-REM Usage: sccmupdate.cmd [computer1] [computer2] [computer3] [...]
+REM Usage: sccmupdate.cmd [computer1] [computer2] [...]
 
 if "%1"=="" (
 	powershell.exe -Command "\\cecs\resources\programs\programs\tools\SCCMupdate.ps1 %COMPUTERNAME%"
