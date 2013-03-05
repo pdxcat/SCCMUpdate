@@ -1,4 +1,6 @@
-﻿param (
+﻿# Credit where credit is due, this was helped along by Tommy Gunn's blog post at:
+# http://www.systemcentercentral.com/BlogDetails/tabid/143/IndexID/19249/Default.aspx
+param (
     [string]$ComputerName = $env:computername
 )
 try {
