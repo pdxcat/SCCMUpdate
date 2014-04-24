@@ -7,6 +7,8 @@ try {
 	$SCCMClient = [wmiclass] "\\$ComputerName\root\ccm:sms_client"
 	$SCCMClient.RequestMachinePolicy() | Out-Null
 	$SCCMClient.EvaluateMachinePolicy() | Out-Null
+	# Comment the below line for SCCM 2007 clients.
+	$SCCMClient.TriggerSchedule('{00000000-0000-0000-0000-000000000121}') | Out-Null
 	echo "Refreshed SCCM Machine Policy on $ComputerName."
 }
 catch {

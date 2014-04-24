@@ -1,10 +1,11 @@
-SCCM 2007 Machine Policy Update Script
+SCCM 2012 Machine Policy Update Script
 ======================================
 By: Craig Meinschein
 
-Forces a computer (or set of computers) to refresh their SCCM
-Machine Policy. In my environment, it was easiest to implement
-this as a PowerShell script with a batch script "wrapper".
+Forces a computer (or set of computers) to run its SCCM Machine Policy
+Retrieval & Evaluation Cycle. Also triggers the SCCM Application Deployment
+Evaluation Cycle on SCCM 2012 clients. In my environment, it was easiest to
+implement this as a PowerShell script with a batch script "wrapper".
 
 Usage
 -----
